@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nc.nc_android.EditorFragment">
+
+    <ListView
+        android:id="@+id/lvUserGames"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="255dp"
+        android:choiceMode="singleChoice"
+        android:listSelector="@drawable/bg_key" />
+
+    <Button
+        android:id="@+id/btnEditSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="183dp"
+        android:layout_marginStart="26dp"
+        android:text="Edit" />
+
+    <Button
+        android:id="@+id/btnNewGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnEditSelected"
+        android:layout_alignTop="@+id/btnEditSelected"
+        android:layout_marginTop="85dp"
+        android:text="New" />
+
+    <TextView
+        android:id="@+id/tvSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnEditSelected"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/btnEditSelected"
+        android:text="Selected item" />
+</RelativeLayout>

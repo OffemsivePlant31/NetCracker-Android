@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="24dp">
+
+
+        <DatePicker
+            android:id="@+id/date_picker"
+            style="@style/MyDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/textColorLinkInverse"
+            android:contextClickable="false"
+            android:dayOfWeekTextAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:importantForAutofill="auto|yes"
+            android:theme="@style/Base.V11.ThemeOverlay.AppCompat.Dialog" />
+
+        <TimePicker
+            android:id="@+id/time_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numbersBackgroundColor="?android:attr/textColorLinkInverse" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Доступно всем"
+            android:checked="true"
+            android:id="@+id/cb_public"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:nestedScrollingEnabled="true"
+            android:id="@+id/lv_users"/>
+
+        <Button
+            android:id="@+id/btn_create_instance"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Создать" />
+    </LinearLayout>
+</ScrollView>

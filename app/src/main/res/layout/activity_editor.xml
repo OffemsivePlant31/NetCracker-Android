@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nc.nc_android.EditorActivity">
+
+    <EditText
+        android:id="@+id/txtMaxPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="201dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Max number of players" />
+
+    <EditText
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtMaxPlayers"
+        android:layout_alignEnd="@+id/txtMaxPlayers"
+        android:layout_marginBottom="64dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="Description of the game" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtDescription"
+        android:layout_alignEnd="@+id/txtDescription"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Game's name" />
+
+    <CheckBox
+        android:id="@+id/checkPublic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtMaxPlayers"
+        android:layout_alignStart="@+id/txtMaxPlayers"
+        android:layout_centerVertical="true"
+        android:text="Public game" />
+
+    <Spinner
+        android:id="@+id/spinnerGameMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtMaxPlayers"
+        android:layout_alignStart="@+id/checkPublic"
+        android:layout_below="@+id/checkPublic"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/btnTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/spinnerGameMode"
+        android:layout_below="@+id/spinnerGameMode"
+        android:layout_marginTop="35dp"
+        android:text="Tasks" />
+
+    <Button
+        android:id="@+id/btnPublish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnTasks"
+        android:layout_marginTop="38dp"
+        android:layout_toEndOf="@+id/spinnerGameMode"
+        android:text="Publish" />
+
+    <TextView
+        android:id="@+id/tvDebugEditor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnTasks"
+        android:layout_below="@+id/btnPublish"
+        android:layout_marginStart="12dp"
+        android:text="Debug" />
+</RelativeLayout>
